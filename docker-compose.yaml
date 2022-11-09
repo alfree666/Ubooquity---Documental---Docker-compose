@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+
+  ubooquity:
+    image: lscr.io/linuxserver/ubooquity:latest
+    container_name: ubooquity
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Madrid
+      - MAXMEM=1024
+    volumes:
+      - ./books:/books
+      - ./comics:/comics
+      - ./uboo_data:/config      
+      - ./uboo_files:/files
+    ports:
+      - "8200:2202"
+      - "8300:2203"
+    restart: unless-stopped
+
+    

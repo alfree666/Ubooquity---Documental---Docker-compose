@@ -1,6 +1,7 @@
 # ubooquity
 Ubooquity - Documental - Docker compose
 
-Ver en "localhost:8200"
+Primero ir a: http://IP:8300/ubooquity/admin 
 
+Luego ir a http://IP:8200/ubooquity 
 
